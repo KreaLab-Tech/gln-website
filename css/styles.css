@@ -416,6 +416,15 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--navy); line-height: 
   color: var(--gray-500);
   font-size: 1.05rem;
   max-width: 480px;
+  margin: 0 auto 14px;
+}
+
+.hero__tagline {
+  color: var(--teal);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 480px;
   margin: 0 auto 26px;
 }
 
@@ -842,6 +851,34 @@ details[open] > summary .accordion-icon::after {
   margin: 0;
 }
 
+/* Checklist de beneficios (menos estrés, más tiempo libre, etc.),
+   reforzando el mensaje del hero con íconos de check en vez de texto
+   corrido -- pensado para escanearse rápido de un vistazo. */
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 28px;
+  max-width: 640px;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.benefits-list svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--teal);
+}
+
 /* Mismo patrón visual que .card__icon: círculo con el ícono adentro,
    así "Honestidad/Excelencia/Compromiso" se sienten parte de la misma
    familia visual que las tarjetas de servicios, no un componente aparte. */
@@ -1093,7 +1130,8 @@ details[open] > summary .accordion-icon::after {
      ancho del contenedor y queda del lado izquierdo, dejando ver la
      sala y las palmeras de la foto del lado derecho. */
   .hero__text { max-width: 540px; }
-  .hero__subtitle { margin: 0 0 26px; }
+  .hero__subtitle { margin: 0 0 14px; }
+  .hero__tagline { margin: 0 0 26px; }
   .hero__actions { flex-direction: row; margin-bottom: 22px; }
   .hero__badges { justify-content: flex-start; }
 
