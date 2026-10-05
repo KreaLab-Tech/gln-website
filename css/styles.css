@@ -838,8 +838,8 @@ details[open] > summary .accordion-icon::after {
   text-align: center;
 }
 .nosotros__photo {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover; /* recorta la foto para llenar el círculo sin deformarse */
   border: 4px solid var(--white);
@@ -1140,7 +1140,12 @@ details[open] > summary .accordion-icon::after {
   .nosotros__intro-wrap {
     flex-direction: row;
     text-align: left;
-    max-width: 640px;
+    max-width: 780px;
+    gap: 32px;
+  }
+  .nosotros__photo {
+    width: 240px;
+    height: 240px;
   }
 
   /* En desktop, el velo pasa de blanco parejo a un degradado que se
